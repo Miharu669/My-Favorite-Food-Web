@@ -1,0 +1,14 @@
+
+@use "footer";
+@use "header";
+@use "image";
+@use "timer";
+@use "ingredients";
+@import "variables";
+
+body {
+    height: auto;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}

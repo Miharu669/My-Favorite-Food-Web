@@ -1,0 +1,128 @@
+footer {
+  background-color: #373A40;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 30px;
+  position: relative;
+}
+footer .footer-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+  position: relative;
+}
+footer .footer-content .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+footer .footer-content .social-media a img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  width: 26px;
+  height: 26px;
+}
+
+/* Responsive */
+@media (min-width: 380px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-content p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .social-media {
+    margin-top: 0;
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+header h1 {
+  color: #373A40;
+  font-size: xx-large;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #DC5F00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.backgroundimage {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url("/public/assets/image/arrozito.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .backgroundimage {
+    width: 100%;
+    height: 150px;
+  }
+}
+.ingredient {
+  width: 20%;
+  background-color: #686D76;
+  border-radius: 0px 0px 18px 18px;
+  height: 250px;
+  margin: 0px 20px 20px 20px;
+  padding: 20px;
+  contain: content;
+}
+.ingredient h2 {
+  text-align: center;
+  margin-top: 0;
+  padding: 2px;
+}
+.ingredient .columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: left;
+}
+.ingredient .columns .checkbox-column {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+.ingredient .columns .checkbox-column p {
+  margin: 0;
+}
+.ingredient .columns .checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ingredient .columns .checkbox-item input[type=checkbox] {
+  margin-right: 10px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,42 @@
+@import "variables";
+
+.ingredient {
+    
+    width: 20%;
+    background-color: $second-color;
+    border-radius: 0px 0px 18px 18px;
+    height: 250px;
+    margin: 0px 20px 20px 20px;
+   padding: 20px;
+    contain: content;
+    h2 {
+        text-align: center;
+        margin-top: 0;
+        padding: 2px;
+    }
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: left;
+        
+
+        .checkbox-column {
+            flex: 1 1 50%;
+            box-sizing: border-box;
+
+            p {
+                margin: 0;
+            }
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    
+    }
+}

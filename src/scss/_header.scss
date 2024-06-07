@@ -1,0 +1,12 @@
+@import "variables";
+
+header {
+    h1 {
+        color: $third-color;
+        font-size: xx-large;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: $fourth-color;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
