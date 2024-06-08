@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
 </head>
+
 <body>
     <header>
         <h1> Arroz a la cubana </h1>
@@ -18,37 +20,58 @@
             <div class="checkbox-column">
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient1" id="arroz">
-                    <label for="arroz"><p>200g arroz</p></label>
+                    <label for="arroz">
+                        <p>200g arroz</p>
+                    </label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient2" id="tomate">
-                    <label for="tomate"><p>300ml de tomate frito</p></label>
+                    <label for="tomate">
+                        <p>300ml de tomate frito</p>
+                    </label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient3" id="platano">
-                    <label for="platano"><p>Un plátano maduro</p></label>
+                    <label for="platano">
+                        <p>Un plátano maduro</p>
+                    </label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient4" id="huevos">
-                    <label for="huevos"><p>2 huevos</p></label>
+                    <label for="huevos">
+                        <p>2 huevos</p>
+                    </label>
                 </div>
             </div>
             <div class="checkbox-column">
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient5" id="sal">
-                    <label for="sal"><p>Sal</p></label>
+                    <label for="sal">
+                        <p>Sal</p>
+                    </label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient6" id="limon">
-                    <label for="limon"><p>Medio limón</p></label>
+                    <label for="limon">
+                        <p>Medio limón</p>
+                    </label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="ingredient7" id="albahaca">
-                    <label for="albahaca"><p>Albahaca</p></label>
+                    <label for="albahaca">
+                        <p>Albahaca</p>
+                    </label>
                 </div>
             </div>
         </div>
     </article>
+    <div class="timer">
+        <span id="minutes">10</span>:<span id="seconds">00</span>
+    </div>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+
+    <script src="/public/js/app.js"></script>
 
     <footer>
         <div class="footer-content">
@@ -61,4 +84,5 @@
         </div>
     </footer>
 </body>
+
 </html>

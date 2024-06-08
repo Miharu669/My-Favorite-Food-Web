@@ -82,6 +82,11 @@ header h1 {
     height: 150px;
   }
 }
+.timer {
+  font-size: 48px;
+  font-weight: bold;
+}
+
 .ingredient {
   width: 20%;
   background-color: #686D76;

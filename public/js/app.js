@@ -30,7 +30,7 @@ let timer;
             return num < 10 ? "0" + num : num;
         }
 
-        // Functionality to start and stop the timer
+        
         function handleStart() {
             startTimer();
         }
@@ -39,9 +39,4 @@ let timer;
             stopTimer();
         }
 
-        // Node.js doesn't have a DOM, so we can't attach event listeners to HTML elements.
-        // Instead, we'll define functions to handle start and stop actions and call them directly.
-        // For example, you can call handleStart() to start the timer.
-
-        // Call the handleStart function to start the timer when the script is executed
         handleStart();
