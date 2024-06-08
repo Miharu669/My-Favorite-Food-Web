@@ -1,42 +1,28 @@
-let timer;
-        let minutes = 10;
-        let seconds = 0;
+const value = document.querySelector("#time");
+const startBtn = document.querySelector("#start");
+const resetBtn = document.querySelector("#reset");
 
-        function startTimer() {
-            timer = setInterval(updateTimer, 1000);
-            console.log("Timer started.");
+startBtn.addEventListener('click', function(){
+    let minute = 10;  
+    let sec = 0;    
+    const timer = setInterval(function(){
+        if (sec < 0) {
+            minute--;
+            sec = 59;
         }
-
-        function stopTimer() {
-            clearInterval(timer);
-            console.log("Timer stopped.");
+        if (sec <= 9) {
+            sec = "0" + sec;
         }
-
-        function updateTimer() {
-            if (seconds === 0 && minutes === 0) {
-                clearInterval(timer);
-                console.log("Time's up!");
-            } else if (seconds === 0) {
-                minutes--;
-                seconds = 59;
-            } else {
-                seconds--;
-            }
-
-            console.log("Minutes:", padZero(minutes), "Seconds:", padZero(seconds));
+        if (sec == 0 && minute == 0) {
+            clearInterval(timer);  
+            alert("DONE!");
+            location.reload();
         }
+        value.innerHTML = minute + ":" + sec;
+        sec--;
+    }, 1000);
+});
 
-        function padZero(num) {
-            return num < 10 ? "0" + num : num;
-        }
-
-        
-        function handleStart() {
-            startTimer();
-        }
-
-        function handleStop() {
-            stopTimer();
-        }
-
-        handleStart();
+resetBtn.addEventListener('click', function(){
+    location.reload();
+});
