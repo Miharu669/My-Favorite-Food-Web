@@ -2,14 +2,16 @@
 @use "footer";
 @use "header";
 @use "image";
-@use "timer";
-@use "ingredients";
-@use "main";
+@use "ingredientimer";
+//@use "timer";
+//@use "ingredients";
+@use "preparation";
 @import "variables";
 
 body {
-    height: auto;
+    height: 100%;
     margin: 0;
     width: 100%;
     padding: 0;
+
 }

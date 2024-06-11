@@ -1,6 +1,8 @@
 @import "variables";
 
 header {
+    position: static;
+    width: 100%;
     h1 {
         color: $base-color;
         font-size: xx-large;
