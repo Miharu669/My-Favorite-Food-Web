@@ -3,7 +3,7 @@ const startBtn = document.querySelector("#start");
 const resetBtn = document.querySelector("#reset");
 
 startBtn.addEventListener('click', function(){
-    let minute = 10;  
+    let minute = 20;  
     let sec = 0;    
     const timer = setInterval(function(){
         if (sec < 0) {

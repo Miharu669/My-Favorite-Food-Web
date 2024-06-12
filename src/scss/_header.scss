@@ -1,12 +1,13 @@
 @import "variables";
 
 header {
-    position: static;
+    position: absolute;
     width: 100%;
+    height: 60px;
     h1 {
         color: $base-color;
-        font-size: xx-large;
-        padding: 10px;
+        font-size: 1.5rem;
+        padding: 0.5vh;
         margin: 0 auto;
         background-color: $fourth-color;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
